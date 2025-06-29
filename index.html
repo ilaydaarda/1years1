@@ -88,6 +88,37 @@
       max-height: 80vh;
       padding-right: 10px;
     }
+
+    /* Mobil için responsive düzenlemeler */
+    @media (max-width: 600px) {
+      #card {
+        margin-top: 60px; /* Mobilde biraz daha az üst boşluk */
+      }
+
+      .side.two {
+        max-height: 60vh; /* Mobilde yüksekliği düşürdük */
+        padding-right: 5px;
+        font-size: 1rem;
+        overflow-y: scroll;
+      }
+
+      .side.two p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .side.one img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+      }
+
+      body {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
